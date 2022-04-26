@@ -1,13 +1,22 @@
-const dialogBoxIcon = document.querySelector(".dialog-box-icon");
+// Initially showing the icon
+const dialogBoxIcon = document.createElement("div");
+dialogBoxIcon.classList.add("dialog-box-icon");
+const iconAvatar = document.createElement("div");
+iconAvatar.classList.add("icon");
+dialogBoxIcon.appendChild(iconAvatar);
+
 const dialogBoxForm = document.querySelector(".dialog-box-form");
+// append icon as a previous node of dialogBoxform
+dialogBoxForm.parentNode.insertBefore(dialogBoxIcon, dialogBoxForm.nextSibling);
 
 // pop the dialog form when icon is clicked
-dialogBoxIcon.addEventListener("click", dialogForm);
+const dialogIcon = document.querySelector(".dialog-box-icon");
+dialogIcon.addEventListener("click", dialogForm);
 
-// function defined
+// handling the dialog form
 function dialogForm() {
   // hide the icon
-  dialogBoxIcon.style = "display: none";
+  dialogIcon.style = "display: none";
   // show the form
   dialogBoxForm.style.display = "flex";
 
@@ -21,7 +30,7 @@ function dialogForm() {
   // handling close action
   closeIcon.addEventListener("click", () => {
     // show the icon
-    dialogBoxIcon.style = "display: grid";
+    dialogIcon.style = "display: grid";
     // hide the form
     dialogBoxForm.style.display = "none";
   });
