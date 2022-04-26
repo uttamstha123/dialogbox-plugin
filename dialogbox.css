@@ -1,3 +1,5 @@
+
+/*** Icon styles ***/
 .dialog-box-icon {
   height: 60px;
   width: 60px;
@@ -23,6 +25,8 @@
   -webkit-clip-path: polygon(50% 32%, 100% 0, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(50% 32%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
+
+/*** Styling form ***/
 .dialog-box-form {
   width: fit-content;
   background: white;
@@ -52,4 +56,24 @@
 }
 .dialog-box-form input[type="submit"]:hover {
   background: #007bff;
+}
+
+
+/*** Close Button ***/
+/*** Input Type reset is used to close and reset the value of input fields ***/
+#close{
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      text-align: center;
+      font-size:  14px;
+      font-weight: bold;
+      padding: 2px;
+      color: #fff;
+      background: #00a5ec;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 2%;
+      right:2%;
 }
