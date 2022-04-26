@@ -15,6 +15,6 @@ Link both files to the page where you want a slider:
 ### Steps
 1. Create a form element that will have all inputs e.g `<form class="dialog-box-form"></form>`
 
-2. Inside the form, add input fields to be used e.g `<input type='name' placeholder='First Name*` required/>
+2. Inside the form, add as many input fields as a direct child of form to be used e.g `<input type='name' placeholder='First Name*` required/> || making it required is optional
 
 3. After clicking on submit button check your browser console to see the result. 
